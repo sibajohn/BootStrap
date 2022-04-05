@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.mymargin
+{
+    padding: 25px;
+    margin: 25px;
+}
+h2
+{
+    color: black;
+    float: none;
+
+}
+.container{
+    margin-top: 1pc;
+    margin-left: 2pc;
+    
+}
+.p-box{
+    border: 2px solid white;
+    width: 23%;
+    float:left;
+    margin-left: 10px;
+    height: 15em;
+    padding: 2px;
+    background-color:antiquewhite
+
+}
