@@ -66,15 +66,20 @@
    <!-- The SignUPForm Begins here -->
 <div class="col-lg-4"></div>
  <div class="col-lg-3 mymargin">
-    <form class="row-g-3">
-        <div class="mb-3">
+    <form action="./sucess.html"class="row-g-3" id="login">
+        <div class="mb-3" >
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <!-- <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+          <input type="text" class="form-control" id="exampleInputEmail1" >
+        <!--   <input type="text" name="Email" id="email"> -->
+          <br>
+          <label for="error" id="error"> </label>
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="error" id="error1"> </label>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -83,7 +88,7 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form></div>
 <div class="col-lg-3"></div>
-
-        
+    
+      <script src="./login.js"></script>
     </body>
 </html>
