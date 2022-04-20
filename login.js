@@ -9,7 +9,7 @@ console.log(form);
  
     let email1 = document.getElementById("exampleInputEmail1");
     let pwd = document.getElementById("exampleInputPassword1");
-       
+           
  function validate()
   {
     let regexp =/^([\w\.-]+)@([\w\-])+.([a-z]{2,3})(.[a-z]{2,3})?$/;
@@ -42,11 +42,38 @@ console.log(form);
     }
     else
     {
-        error1.innerHTML ="Enter  valid password ";
+        error1.innerHTML ="Enter  valid 8 digit password ";
         error1.style.color ="red";
         return false;
     }
     
     
   }
+
+  function testPassword() {
+    var strength = 0;
+
+    strength += /[A-Z]+/.test(pwd.value) ? 1 : 0;
+    strength += /[a-z]+/.test(pwd.value) ? 1 : 0;
+    strength += /[0-9]+/.test(pwd.value) ? 1 : 0;
+   // strength += /[\W]+/.test(pwd.value) ? 1 : 0;
+
+    switch(strength) {
+        case 2:
+          pwd_strength.innerHTML ="Medium";
+          pwd_strength.style.color ="orange";
+            break;
+        case 3:
+            // it's strong!
+            pwd_strength.innerHTML ="Strong";
+            pwd_strength.style.color ="green";
+          
+            break;
+        default:
+          pwd_strength.innerHTML ="weak";
+          pwd_strength.style.color ="red";
+           // it's weak!
+            break;
+    }
+}
  
